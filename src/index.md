@@ -23,8 +23,7 @@ Minimal APIs are great for building microservices for your applications fast.
 Minimal APIs is built using C#. An open-source, modern, object-oriented, and type-safe programming language you'll love.Build an API in C# with just **four lines of code**.
 
 ```csharp
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+var app = WebApplication.Create(args);
 
 app.MapGet("/", () => "Hello World!");
 
